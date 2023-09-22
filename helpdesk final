@@ -1,0 +1,41 @@
+# Helpdesk ticket  
+
+Set_Tickets_counter=1  
+
+Ticket_Number= input("Please enter Ticket Number")  
+
+Name= input("Please enter Name")  
+
+Staff_ID= input("please enter yout Staff_ID")
+
+Email= input("Please enter Email")
+Description_of_the_issue= input("Please enter Description of the issue")  
+print (Ticket_Number),  
+print (Name)  
+print (Staff_ID)
+print (Email),   
+print (Description_of_the_issue) 
+
+Staff_ID_prefix = Staff_ID[:2]
+
+Name_prefix = Name[:3]
+
+New_password = (Staff_ID_prefix + Name_prefix)
+change_password= input ("Do you want to change the Password? ")
+    
+if "Y" in change_password :
+        
+        print(New_password)
+   
+issue_resolved = input("Has the issue been resolved?Y/N")
+
+if "Y" in issue_resolved : 
+    
+    print("issue_closed")
+    
+elif "N" in issue_resolved :
+    
+    print("issue open")
+   
+
+
